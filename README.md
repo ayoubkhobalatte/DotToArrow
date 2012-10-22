@@ -1,5 +1,4 @@
 <h1>Description</h1>
---------------------
 <p>
   Old habits die hard hard. I understand that. 
   If you're coming to the PHP world from the your favourite programming language (say Java or C++), you might expereience a few issues.
@@ -17,15 +16,14 @@
 </ul>
 
 <h1>How to install</h1>
----------------------
-
 installing this plugin is easy. You can do it in two possible ways.
 
 <h2> Using Package Control (Recommended) </h2>
 <p>
-  Simply install the powerful <a href='http://wbond.net/sublime_packages/package_control' target='_blank'> Package Control </a>
+  Simply install the powerful 
+  <a href='http://wbond.net/sublime_packages/package_control' target='_blank'> Package Control </a>
   plugin by Will Bond. Then open the command palette 
-  (usually by hitting the Command+SHIFT+P or CTRL+SHIFT+P) and type "Install package: HelloPHP"
+  (usually by hitting the Command+SHIFT+P or CTRL+SHIFT+P) and type <i>Install package: HelloPHP</i>
 </p>
 
 <h2> Manual Install</h2>
