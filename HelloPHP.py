@@ -30,14 +30,13 @@ class HelloPHPCommand(sublime_plugin.EventListener):
 		extracted = []
 
 		dots = view.find_all(self.dotPattern, sublime.IGNORECASE, "$1", extracted)
-		
+
 		edit = view.begin_edit()
 		for dot in dots:
 			view.replace(edit, dot, "->" + extracted[0])
 		view.end_edit(edit)
 
 	def on_modified (self, view):
-
 		if self.isPHPFile(view):
 			if self.isIgnoredCase(view):
 				return
