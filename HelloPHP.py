@@ -1,9 +1,17 @@
+#	HelloPHPCommand.py
+#	
+#	Copyright (c) 2009 Ayoub Khobalatte
+#	Licensed under the MIT and GPL licenses.
+#
+#	https://github.com/Rorchackh/HelloPHP
+
 import sublime
 import sublime_plugin
 import os
 
-
 class HelloPHPCommand(sublime_plugin.EventListener):
+
+	dotPattern = "\.([a-zA-Z_0-9]+?\(.*?\))"
 
 	def isPHPFile(self, view):
 		return "PHP" in os.path.basename(view.settings().get('syntax'))
@@ -19,26 +27,20 @@ class HelloPHPCommand(sublime_plugin.EventListener):
 		return True
 
 	def modifyLine(self, view):
-		for region in view.sel():
+		extracted = []
 
-			originalLine = view.full_line(region)
-			print "current line is: " + originalLine
-
-			if "." in line:
-				print 'detected the .'
-				line_contents = line + ' ==> hell yeah'
-				self.view.insert(edit, line.begin(), line_contents)
+		dots = view.find_all(self.dotPattern, sublime.IGNORECASE, "$1", extracted)
+		
+		edit = view.begin_edit()
+		for dot in dots:
+			view.replace(edit, dot, "->" + extracted[0])
+		view.end_edit(edit)
 
 	def on_modified (self, view):
 
 		if self.isPHPFile(view):
-
 			if self.isIgnoredCase(view):
 				return
-
-				print 'emoty...'
-			
-			# print "Not an ignored case, now start detection"
 
 			if not self.isReturnKey(view):
 				return
