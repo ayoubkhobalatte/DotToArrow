@@ -22,7 +22,8 @@ Installing this plugin is easy. You can do it in two possible ways.
 
 <h3> Using Package Control (Recommended) </h3>
 
-<p style='color: red'>This is not yet supported.</p>
+<b>WARNING:</b> This is not yet supported.
+
 <p>
 	Simply install the awesome [Package Control](http://wbond.net/sublime_packages/package_control) plugin by Will Bond. 
 	Then open the command palette (usually by hitting the Command+Shift+P or CTRL+Shift+P) and type <i>Install package: HelloPHP</i>
