@@ -1,2 +1,6 @@
+# MAC OS FILES
+.DS_Store
+
+# TESTS AND TEMP FILES
 *.php
 *.pyc
