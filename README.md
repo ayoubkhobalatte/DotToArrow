@@ -47,4 +47,4 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 ## How to contribute
 
-Found a bug in this plugin or have an idea? Please feel free to open a ticket here or send me a private message. You can also follow me on [https://twitter.com/rorchackh](Twitter) or  [https://github.com/rorchackh](Github) for the latest news and development.
+Found a bug in this plugin or have an idea? Please feel free to open a ticket here or send me a private message. You can also follow me on [Twitter](https://twitter.com/rorchackh) or  [Github](https://github.com/rorchackh) for the latest news and development.
