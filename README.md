@@ -2,10 +2,7 @@
 
 Old habits die hard hard. I understand that. If you're coming to the PHP world from the your favourite programming language (say Java or C++), you might expereience a few syntaxt differences that might annoy you. Namely, the arrow notation and $ at the beginning of variables.
 
-<p>
-	HelloPHP is a small [Sublime Text 2](http://www.sublimetext.com/2)
-	plugin made to help people who are new or not used to PHP syntax (like myself a few months ago). 
-</p>
+HelloPHP is a small [Sublime Text 2](http://www.sublimetext.com/2) plugin made to help people who are new or not used to PHP syntax (like myself a few months ago). 
 
 This plugin offers two simple features:
 <ul>
@@ -24,10 +21,7 @@ Installing this plugin is easy. You can do it in two possible ways.
 
 <b>WARNING:</b> This is not yet supported.
 
-<p>
-	Simply install the awesome [Package Control](http://wbond.net/sublime_packages/package_control) plugin by Will Bond. 
-	Then open the command palette (usually by hitting the Command+Shift+P or CTRL+Shift+P) and type <i>Install package: HelloPHP</i>
-</p>
+Simply install the awesome [Package Control](http://wbond.net/sublime_packages/package_control) plugin by Will Bond. Then open the command palette (usually by hitting the Command+Shift+P or CTRL+Shift+P) and type <i>Install package: HelloPHP</i>
 
 <h3> Manual Install </h3>
 
