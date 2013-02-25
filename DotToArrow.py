@@ -1,19 +1,19 @@
-#	HelloPHPCommand.py
+#	DotToArrowCommand.py
 #	
 #	Copyright (c) 2013 Ayoub Khobalatte
 # 	Licensed under the Apache License, Version 2.0
 #
-#	https://github.com/Rorchackh/HelloPHP
+#	https://github.com/Rorchackh/DotToArrow
 
 import sublime
 import sublime_plugin
 import os
 
-class HelloPHPCommand(sublime_plugin.EventListener):
+class DotToArrowCommand(sublime_plugin.EventListener):
 
 	def __init__(self):
 		self.dotPattern = "\.([a-zA-Z_0-9]+?\(.*?\))"
-		self.addSemicolon = sublime.load_settings('HelloPHP.sublime-settings').get('add_semi_colon')
+		self.addSemicolon = sublime.load_settings('DotToArrow.sublime-settings').get('add_semi_colon')
 
 	def isPHPFile(self, view):
 		return "PHP" in os.path.basename(view.settings().get('syntax'))

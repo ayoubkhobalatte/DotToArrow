@@ -1,18 +1,10 @@
 ## Description
 
-Old habits die hard hard. I understand that. If you're coming to the PHP world from the your favourite programming language (say Java or C++), you might expereience a few syntaxt differences that might annoy you. Namely, the arrow notation and $ at the beginning of variables.
+Old habits die hard hard. I understand that. If you're coming to the PHP world from the your favourite programming language (say Java or C++), you might expereience a few syntaxt differences that might annoy you. Namely, the arrow notation instead of the dot.
 
-HelloPHP is a small [Sublime Text 2](http://www.sublimetext.com/2) plugin made to help people who are new or not used to PHP syntax (like myself a few months ago). 
+DotToArrow is a small [Sublime Text 2](http://www.sublimetext.com/2) plugin made to help people who are new or not used to PHP syntax (like myself a few months ago). 
 
-This plugin offers two simple features:
-<ul>
-	<li>
-		Automatically prepends the dollar sign to PHP variables
-	</li>
-	<li>
-		Transforms the dot (.) sign to the arrow sign (->) for method and class variables calls.
-	</li>
-</ul>
+This plugin transforms the dot (.) sign to the arrow sign (->) for method and class variables calls.
 
 ## How to install
 Installing this plugin is easy. You can do it in two possible ways.
@@ -21,7 +13,7 @@ Installing this plugin is easy. You can do it in two possible ways.
 
 <b>WARNING:</b> This is not yet supported.
 
-Simply install the awesome [Package Control](http://wbond.net/sublime_packages/package_control) plugin by Will Bond. Then open the command palette (usually by hitting the Command+Shift+P or CTRL+Shift+P) and type <i>Install package: HelloPHP</i>
+Simply install the awesome [Package Control](http://wbond.net/sublime_packages/package_control) plugin by Will Bond. Then open the command palette (usually by hitting the Command+Shift+P or CTRL+Shift+P) and type <i>Install package: DotToArrow</i>
 
 <h3> Manual Install </h3>
 
@@ -37,7 +29,7 @@ This plugin looks for function calls as you type and change dots to arrow as you
 <h3>Customize Behavior</h3>
 
 You can choose whether the plugin adds semicolons for you when it detects a function call. This is default behavior. 
-However, if you would like to switch this off, Please open HelloPHP.sublime-settings and change 
+However, if you would like to switch this off, Please open DotToArrow.sublime-settings and change 
 
 	{
 	   "add_semi_colon": true
