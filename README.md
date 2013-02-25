@@ -30,6 +30,25 @@ Simply install the awesome [Package Control](http://wbond.net/sublime_packages/p
 	You will need to restart Sublime Text 2.
 </p>
 
+# How to use
+Once this plugin is installed, it is automatically run when you have PHP files opened. 
+This plugin looks for function calls as you type and change dots to arrow as you write them.
+
+<h3>Customize Behavior</h3>
+
+You can choose whether the plugin adds semicolons for you when it detects a function call. This is default behavior. 
+However, if you would like to switch this off, Please open HelloPHP.sublime-settings and switch 
+
+	{
+	   "add_semi_colon": true
+	}
+
+to 
+	
+	{
+	   "add_semi_colon": t
+	}
+
 ## Licence
 Copyright 2013 Ayoub Khobalatte.
 

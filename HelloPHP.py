@@ -11,7 +11,9 @@ import os
 
 class HelloPHPCommand(sublime_plugin.EventListener):
 
-	dotPattern = "\.([a-zA-Z_0-9]+?\(.*?\))"
+	def __init__(self):
+		self.dotPattern = "\.([a-zA-Z_0-9]+?\(.*?\))"
+		self.addSemicolon = sublime.load_settings('HelloPHP.sublime-settings').get('add_semi_colon')
 
 	def isPHPFile(self, view):
 		return "PHP" in os.path.basename(view.settings().get('syntax'))
@@ -32,9 +34,12 @@ class HelloPHPCommand(sublime_plugin.EventListener):
 			# replacing the dot by arrow notation here
 			view.replace(edit, dot, "->" + extracted[0])
 
+			print self.addSemicolon
+
 			# adding a semicolon at the end of line
 			pos = view.sel()[0].begin()
-			view.insert(edit, pos, ';')
+			if self.addSemicolon:
+				view.insert(edit, pos, ';')
 
 			# Moving the cursor back inside parentheses
 			repos = pos - 1
@@ -51,10 +56,4 @@ class HelloPHPCommand(sublime_plugin.EventListener):
 			self.modifyLine(view)
 		# else:
 		# 	sublime.message_dialog("This file doesn't seem to be a PHP file (Check syntax chosen)");
-
-
-
-
-
-
-
+        
