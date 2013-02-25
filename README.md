@@ -1,10 +1,10 @@
 ## Description
 
-Old habits die hard hard. I understand that. If you're coming to the PHP world from the your favourite programming language (say Java or C++), you might expereience a few syntaxt differences that might annoy you. Namely, the arrow notation instead of the dot.
+Old habits die hard hard. I understand that. If you're coming to the PHP world from the your favourite programming language (say Java or C++), you might experience a few syntax differences that might annoy you. Namely, the arrow notation instead of the dot.
 
-DotToArrow is a small [Sublime Text 2](http://www.sublimetext.com/2) plugin made to help people who are new or not used to PHP syntax (like myself a few months ago). 
+DotToArrow is a small [Sublime Text 2](http://www.sublimetext.com/2) plugin made to help people who are new or not used to PHP syntax 
 
-This plugin transforms the dot (.) sign to the arrow sign (->) for method and class variables calls.
+This plugin transforms the dot (.) sign to the arrow sign (->) for method and class variable calls.
 
 ## How to install
 Installing this plugin is easy. You can do it in two possible ways.
