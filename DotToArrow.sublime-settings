@@ -1,4 +1,4 @@
 {
    // This indicates whether to add semicolon after making dot into arrow
-   "add_semi_colon": false
+   "add_semi_colon": true
 }
