@@ -37,7 +37,7 @@ This plugin looks for function calls as you type and change dots to arrow as you
 <h3>Customize Behavior</h3>
 
 You can choose whether the plugin adds semicolons for you when it detects a function call. This is default behavior. 
-However, if you would like to switch this off, Please open HelloPHP.sublime-settings and switch 
+However, if you would like to switch this off, Please open HelloPHP.sublime-settings and change 
 
 	{
 	   "add_semi_colon": true
@@ -46,7 +46,7 @@ However, if you would like to switch this off, Please open HelloPHP.sublime-sett
 to 
 	
 	{
-	   "add_semi_colon": t
+	   "add_semi_colon": false
 	}
 
 ## Licence
