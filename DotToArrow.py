@@ -20,9 +20,7 @@ class DotToArrowCommand(sublime_plugin.EventListener):
 
 	def isIgnoredCase(self, view):
 		action = view.command_history(0, True)[0]
-		if action == "left_delete" or action == "right_delete":
-			return True
-		return False
+		return action == "left_delete" or action == "right_delete":
 
 	def modifyLine(self, view):
 		extracted = []
